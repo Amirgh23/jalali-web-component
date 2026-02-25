@@ -1,0 +1,63 @@
+{
+  "name": "@lomineuro/jalali-web-component",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Framework-agnostic Jalali Date Picker Web Component - Works with React, Vue, Angular, Svelte, and Vanilla JS",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "vitest --run",
+    "build": "rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c",
+    "build:watch": "rollup -c -w",
+    "size-report": "node scripts/size-report.js"
+  },
+  "keywords": [
+    "jalali",
+    "date",
+    "picker",
+    "web-component",
+    "typescript",
+    "performance",
+    "react",
+    "vue",
+    "angular",
+    "svelte",
+    "framework-agnostic",
+    "persian",
+    "gregorian",
+    "hijri",
+    "calendar"
+  ],
+  "author": "Amirreza Ghafarian <amirghafarian7879@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lomineuro/jalali-web-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lomineuro/jalali-web-component/issues"
+  },
+  "homepage": "https://github.com/lomineuro/jalali-web-component#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jasmine": "^6.0.0",
+    "fast-check": "^3.15.0",
+    "jasmine": "^6.1.0",
+    "jsdom": "^28.1.0",
+    "rollup": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.18"
+  }
+}
